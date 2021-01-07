@@ -19,4 +19,7 @@ export class GenreResource {
     return this.http.get<Genre[]>('api/Genre');
   };
 
+  deleteAllGenres(): Observable<void> {
+    return this.http.delete<void>('api/Genre')
+  };
 }

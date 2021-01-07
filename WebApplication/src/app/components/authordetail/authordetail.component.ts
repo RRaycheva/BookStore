@@ -1,15 +1,27 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthorResource } from 'src/app/services/author.service';
+import { Author } from 'src/app/shared/author';
 
 @Component({
   selector: 'app-authordetail',
   templateUrl: './authordetail.component.html',
   styleUrls: ['./authordetail.component.scss']
 })
-export class AuthordetailComponent implements OnInit {
+export class AuthordetailComponent {
 
-  constructor() { }
+  author = new Author;
 
-  ngOnInit(): void {
+  constructor(
+    private authorResurce: AuthorResource,
+    private router: Router
+  ) { }
+
+  save(): void {
+    this.authorResurce.createAuthor(this.author)
+      .subscribe(() => {
+        this.router.navigate(['/addbook']);
+      });
+
   }
-
 }

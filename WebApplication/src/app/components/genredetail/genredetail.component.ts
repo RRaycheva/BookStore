@@ -20,7 +20,7 @@ export class GenredetailComponent {
   save(): void {
     this.genreResurce.createGenre(this.genre)
       .subscribe(() => {
-        this.router.navigate(['']);
+        this.router.navigate(['/addauthor']);
       });
 
   }

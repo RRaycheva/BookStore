@@ -20,4 +20,8 @@ export class BookResource {
     return this.http.get<Book[]>('api/Book');
   };
 
+  deleteAllBooks(): Observable<void> {
+    return this.http.delete<void>('api/Book')
+  };
+
 }
