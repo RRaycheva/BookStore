@@ -1,8 +1,59 @@
-<div class="row">
-    <div class="col-logo">
-        <div class="nav">
-
-        </div>
-
+<nav class="navbar navbar-expand-lg"
+     id="menu-bar">
+  <div class="container-fluid">
+    <a class="navbar-brand"
+       routerLink="/"><img src="assets/logo.png"
+           width="240"
+           height="120"></a>
+    <div class="collapse navbar-collapse"
+         id="navbarNavDropdown">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link active"
+             aria-current="page"
+             routerLink="/">Начало</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle"
+             routerLink="/books"
+             id="navbarDropdownMenuLink"
+             role="button"
+             data-bs-toggle="dropdown"
+             aria-expanded="false">
+            Книги
+          </a>
+          <ul class="dropdown-menu"
+              aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item"
+                 href="#">Action</a></li>
+            <li><a class="dropdown-item"
+                 href="#">Another action</a></li>
+            <li><a class="dropdown-item"
+                 href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+             routerLink="/">Е-Книги</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+             routerLink="/">За нас</a>
+        </li>
+      </ul>
     </div>
-</div>
+  </div>
+  <div class="collapse navbar-collapse"
+       id="icon">
+    <ul class="navbar-nav ml-auto">
+      <li><i class="fa fa-search"></i></li>
+      <li><i class="fa fa-shopping-basket"></i></li>
+      <a routerLink="/login">
+        <li><i class="fa fa-user"></i></li>
+      </a>
+      <a routerLink="/addbook">
+        <li> <i class="fa fa-plus"></i></li>
+      </a>
+    </ul>
+  </div>
+</nav>

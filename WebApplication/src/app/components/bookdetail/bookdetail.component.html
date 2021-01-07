@@ -1,0 +1,67 @@
+<form #form="ngForm"
+      autocomplete="off">
+  <div class="form-group">
+    <div class="input-group-prepend">
+      <div class="input-group-text bg-white">
+        <i class="fa fa-book"></i>
+      </div>
+    </div>
+    <input name="title"
+           [(ngModel)]="book.Title"
+           class="form-control"
+           placeholder="Book Title">
+  </div>
+  <div class="form-group">
+    <div class="input-group-prepend">
+      <div class="input-group-text bg-white">
+        <i class="fa fa-book">
+        </i>
+      </div>
+    </div>
+
+    <input name="description"
+           [(ngModel)]="book.Description"
+           class="form-control"
+           placeholder="Book Description">
+  </div>
+  <div class="form-group">
+    <div class="input-group-prepend">
+      <div class="input-group-text bg-white">
+        <i class="fa fa-book">
+        </i>
+      </div>
+    </div>
+
+    <input name="publisher"
+           [(ngModel)]="book.Publisher"
+           class="form-control"
+           placeholder="Book Publisher">
+  </div>
+  <div class="form-group">
+    <div class="input-group-prepend">
+      <div class="input-group-text bg-white">
+        <i class="fa fa-book">
+        </i>
+      </div>
+    </div>
+
+    <input name="genre"
+           [(ngModel)]="book.Genre"
+           class="form-control"
+           placeholder="Book Genre">
+  </div>
+  <div class="form-group">
+    <div class="input-group-prepend">
+      <div class="input-group-text bg-white">
+        <i class="fa fa-book"> </i>
+      </div>
+    </div>
+    <input name="author"
+           [(ngModel)]="book.Author"
+           class="form-control"
+           placeholder="Book Author">
+  </div>
+  <div class="form-group">
+    <button type="btn btn-success btn-lg btn-block">Запази</button>
+  </div>
+</form>

@@ -1,0 +1,17 @@
+<div class="form-group">
+  <label for="usr">Genre name:</label>
+  <input name="description"
+         [(ngModel)]="genre.Name"
+         class="form-control">
+</div>
+<div class="form-group">
+  <label for="usr">Genre description:</label>
+  <input name="description"
+         [(ngModel)]="genre.Description"
+         class="form-control">
+
+</div>
+
+<button (click)="save()"
+        routerLink="/author"
+        routerLinkActive="activebutton">Запази</button>
