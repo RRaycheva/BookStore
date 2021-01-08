@@ -13,7 +13,7 @@ export class BookDetailComponent {
 
   constructor(
     private bookResource: BookResource,
-    private router: Router
+    public router: Router
   ) { }
 
   save(): void {

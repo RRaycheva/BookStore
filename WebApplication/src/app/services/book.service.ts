@@ -8,9 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class BookResource {
 
-  constructor(
-    private http: HttpClient
-  ) { }
+  constructor(private http: HttpClient) { }
 
   createBook(book: Book): Observable<void> {
     return this.http.post<void>('api/Book', book);
