@@ -1,10 +1,7 @@
-﻿using BookStoreApi.Log;
-using BookStoreApi.Models;
+﻿using BookStoreApi.Models;
+using BookStoreApi.Models.Common;
 using Microsoft.AspNetCore.Http;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace BookStoreApi.Services
 {

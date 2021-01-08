@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BookStoreApi.Log
+namespace BookStoreApi.Models.Common
 {
     public class LogEntry
     {

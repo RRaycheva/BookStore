@@ -1,5 +1,5 @@
 ﻿
-using BookStoreApi.Log;
+using BookStoreApi.Models.Common;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookStoreApi.Models
