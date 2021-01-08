@@ -1,40 +1,52 @@
 <div class="form-group">
   <label for="usr">Заглавие</label>
   <input name="description"
-         [(ngModel)]="book.Title"
+         [(ngModel)]="book.title"
          class="form-control">
 </div>
 <div class="form-group">
   <label for="usr">Резюме:</label>
   <input name="description"
-         [(ngModel)]="book.Description"
+         [(ngModel)]="book.description"
          class="form-control">
 
   <div class="form-group">
     <label for="usr">Издателство:</label>
     <input name="description"
-           [(ngModel)]="book.Publisher"
+           [(ngModel)]="book.publisher"
            class="form-control">
 
+
     <div class="form-group">
-      <label for="usr">Жанр:</label>
-      <input name="description"
-             [(ngModel)]="book.Genre"
-             class="form-control">
+      <label for="genre">Жанр</label>
+      <select class="form-control"
+              id="genre"
+              required
+              [(ngModel)]="book.genre"
+              name="genre"
+              #power="ngModel">
+        <option *ngFor="let genre of genres$ | async"
+                [value]="author">{{genre.name}} </option>
+      </select>
 
       <div class="form-group">
-        <label for="usr">Автор:</label>
-        <input name="description"
-               [(ngModel)]="book.Author"
-               class="form-control">
-      </div>
+        <label for="author">Автор</label>
+        <select class="form-control"
+                id="author"
+                required
+                [(ngModel)]="book.author"
+                name="author"
+                #power="ngModel">
+          <option *ngFor="let author of authors$ | async"
+                  [value]="author">{{author.firstName}} {{author.lastName}}</option>
+        </select>
 
-      <div class="form-group">
-        <label for="usr">Картинка:</label>
-        <input name="description"
-               [(ngModel)]="book.ImgPath"
-               class="form-control">
-      </div>
-      <button (click)="save()"
-              routerLink="/books"
-              routerLinkActive="activebutton">Запази</button>
+        <div class="form-group">
+          <label for="usr">Картинка:</label>
+          <input name="description"
+                 [(ngModel)]="book.imgPath"
+                 class="form-control">
+        </div>
+        <button (click)="save()"
+                routerLink="/books"
+                routerLinkActive="activebutton">Запази</button>

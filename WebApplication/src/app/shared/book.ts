@@ -2,11 +2,11 @@ import { Author } from "./author";
 import { Genre } from "./genre";
 
 export class Book {
-    Id: number;
-    Title: string;
-    Description: string;
-    Publisher: string;
-    Genre: Genre;
-    Author: Author;
-    ImgPath: any
+    i: number;
+    title: string;
+    description: string;
+    publisher: string;
+    genre: Genre;
+    author: Author;
+    imgPath: any
 }

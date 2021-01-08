@@ -1,7 +1,7 @@
 export class Author {
-    Id:number;
-    Nickname:string;
-    FirstName:string;
-    LastName:string;
-    Books:[]
+    id: number;
+    nickname: string;
+    firstName: string;
+    lastName: string;
+    books: []
 }

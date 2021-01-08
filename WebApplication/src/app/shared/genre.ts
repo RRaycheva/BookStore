@@ -1,5 +1,5 @@
 export class Genre {
-    Id: number;
-    Name: string;
-    Description:string
+    id: number;
+    name: string;
+    description: string
 }

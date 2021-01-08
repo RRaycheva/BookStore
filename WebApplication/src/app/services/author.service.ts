@@ -15,10 +15,10 @@ export class AuthorResource {
   };
 
   getAllAuthors(): Observable<Author[]> {
-    return this.http.get<Author[]>('api/Genre');
+    return this.http.get<Author[]>('api/Author');
   };
 
-  deleteAllUsers(): Observable<void> {
-    return this.http.delete<void>('api/Book')
+  deleteAllAuthors(): Observable<void> {
+    return this.http.delete<void>('api/Author')
   };
 }
