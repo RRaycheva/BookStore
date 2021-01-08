@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BestsellerComponent } from './components/bestseller/bestseller.component';
-import { ProductgridComponent } from './components/productgrid/productgrid.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { BooksListComponent } from './components/books-list/books-list.component';
@@ -29,7 +28,6 @@ import { AuthordetailComponent } from './components/authordetail/authordetail.co
     HeaderComponent,
     FooterComponent,
     BestsellerComponent,
-    ProductgridComponent,
     BannerComponent,
     HomepageComponent,
     BooksListComponent,
