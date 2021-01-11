@@ -6,7 +6,7 @@ export class Book {
     title: string;
     description: string;
     publisher: string;
-    genre: Genre;
-    author: Author;
-    imgPath: any
+    genreId: Genre;
+    authorId: Author;
+    imgPath: any;
 }

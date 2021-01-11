@@ -16,17 +16,18 @@
            [(ngModel)]="book.publisher"
            class="form-control">
 
-
     <div class="form-group">
       <label for="genre">Жанр</label>
       <select class="form-control"
               id="genre"
               required
               [(ngModel)]="book.genre"
-              name="genre"
-              #power="ngModel">
+              (ngModelChange)="book.genreId = $event?.id"
+              name="genre">
         <option *ngFor="let genre of genres$ | async"
-                [value]="author">{{genre.name}} </option>
+                [ngValue]="genre">
+          {{genre.name}}
+        </option>
       </select>
 
       <div class="form-group">
@@ -34,11 +35,13 @@
         <select class="form-control"
                 id="author"
                 required
-                [(ngModel)]="book.author"
-                name="author"
-                #power="ngModel">
+                [(ngModel)]="book.authorId"
+                (ngModelChange)="book.authorId = $event?.id"
+                name="author">
           <option *ngFor="let author of authors$ | async"
-                  [value]="author">{{author.firstName}} {{author.lastName}}</option>
+                  [ngValue]="author">
+            {{author.firstName}} {{ author.lastName }}
+          </option>
         </select>
 
         <div class="form-group">

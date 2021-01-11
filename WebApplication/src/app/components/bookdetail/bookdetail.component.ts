@@ -32,7 +32,7 @@ export class BookDetailComponent {
   save(): void {
     this.bookResource.createBook(this.book)
       .subscribe(() => {
-        this.router.navigate(['/addauthor']);
+        this.router.navigate(['/books']);
       });
   }
 }

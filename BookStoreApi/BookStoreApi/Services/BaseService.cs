@@ -1,7 +1,7 @@
 ﻿using BookStoreApi.Models;
 using BookStoreApi.Models.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using System;
+
 using System.Collections.Generic;
 using System.Linq;
 
@@ -43,9 +43,10 @@ namespace BookStoreApi.Services
             return model;
         }
 
-        public T Create(T model)
+        public virtual T Create(T model)
         {
-            context.Set<T>().Add(model);
+            //context.Set<T>().Add(model);
+            context.Entry(model).State = EntityState.Added;
             context.SaveChanges();
             return model;
         }
