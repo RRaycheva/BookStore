@@ -9,4 +9,5 @@ export class Book {
     genreId: Genre;
     authorId: Author;
     imgPath: any;
+    price: number;
 }

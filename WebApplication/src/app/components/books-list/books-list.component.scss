@@ -9,14 +9,29 @@
   transform: scale(1, 1);
   transition-duration: 500ms;
   transition-timing-function: ease-out;
+  height: 400;
+  width: 500;
+}
 
+.card-body {
+  color: aliceblue;
+}
 
+.card {
+  background-color: #216669;
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-bottom: 30px;
 }
 
 .img-wrapper {
   overflow: hidden;
 }
 
-.bookgrid {
-  background-color: #98a3a3;
+#background {
+  background-color: #6f878d;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
