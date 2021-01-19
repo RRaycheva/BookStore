@@ -6,6 +6,8 @@ import { BookDetailComponent } from './components/bookdetail/bookdetail.componen
 import { LoginComponent } from './components/login/login.component';
 import { GenredetailComponent } from './components/genredetail/genredetail.component';
 import { AuthordetailComponent } from './components/authordetail/authordetail.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { BestsellerComponent } from './components/bestseller/bestseller.component';
 
 
 const routes: Routes = [
@@ -36,7 +38,13 @@ const routes: Routes = [
   {
     path: 'addbook',
     component: BookDetailComponent
+  },
+  {
+    path: 'about-us',
+    component: AboutUsComponent
   }
+
+
 ];
 
 @NgModule({

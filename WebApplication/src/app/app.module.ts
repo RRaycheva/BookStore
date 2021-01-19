@@ -20,6 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { GenredetailComponent } from './components/genredetail/genredetail.component';
 import { AuthordetailComponent } from './components/authordetail/authordetail.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import { AuthordetailComponent } from './components/authordetail/authordetail.co
     BookDetailComponent,
     LoginComponent,
     GenredetailComponent,
-    AuthordetailComponent
+    AuthordetailComponent,
+    AboutUsComponent
+
 
   ],
   imports: [
@@ -42,9 +46,11 @@ import { AuthordetailComponent } from './components/authordetail/authordetail.co
     AppRoutingModule,
     CommonModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [BookResource, UserResource, AuthorResource, GenreResource],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+export class NgbdButtonsCheckboxReactiveModule { }
