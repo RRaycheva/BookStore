@@ -22,4 +22,20 @@ export class BookResource {
     return this.http.delete<void>('api/Book')
   };
 
+  getBookId(id): Observable<any> {
+    return this.http.get('api/Book/' + id);
+  }
+
+  update(id, book: Book): Observable<any> {
+    return this.http.put('api/Book/' + id, book);
+  }
+
+  delete(id): Observable<any> {
+    return this.http.delete('api/Book/' + id);
+  }
+
+  findByTitle(title): Observable<any> {
+    return this.http.get(`api/Book/?title=${title}`);
+  }
+
 }

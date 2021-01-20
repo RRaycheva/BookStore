@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BooksListComponent } from './components/books-list/books-list.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
@@ -8,6 +8,7 @@ import { GenredetailComponent } from './components/genredetail/genredetail.compo
 import { AuthordetailComponent } from './components/authordetail/authordetail.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { BestsellerComponent } from './components/bestseller/bestseller.component';
+import { AboutBookComponent } from './components/about-book/about-book.component';
 
 
 const routes: Routes = [
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: 'about-us',
     component: AboutUsComponent
+  },
+  {
+    path: 'aboutbook/:id',
+    component: AboutBookComponent
   }
 
 

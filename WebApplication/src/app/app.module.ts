@@ -22,6 +22,7 @@ import { GenredetailComponent } from './components/genredetail/genredetail.compo
 import { AuthordetailComponent } from './components/authordetail/authordetail.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AboutBookComponent } from './components/about-book/about-book.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     LoginComponent,
     GenredetailComponent,
     AuthordetailComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    AboutBookComponent
 
 
   ],
