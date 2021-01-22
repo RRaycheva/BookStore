@@ -23,6 +23,7 @@ import { AuthordetailComponent } from './components/authordetail/authordetail.co
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutBookComponent } from './components/about-book/about-book.component';
+import { MarketCardComponent } from './components/market-card/market-card.component';
 
 
 
@@ -41,6 +42,7 @@ import { AboutBookComponent } from './components/about-book/about-book.component
     AuthordetailComponent,
     AboutUsComponent,
     AboutBookComponent,
+    MarketCardComponent,
   ],
   imports: [
     BrowserModule,

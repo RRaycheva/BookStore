@@ -9,6 +9,7 @@ import { AuthordetailComponent } from './components/authordetail/authordetail.co
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { BestsellerComponent } from './components/bestseller/bestseller.component';
 import { AboutBookComponent } from './components/about-book/about-book.component';
+import { MarketCardComponent } from './components/market-card/market-card.component';
 
 
 
@@ -48,6 +49,10 @@ const routes: Routes = [
   {
     path: 'aboutbook/:id',
     component: AboutBookComponent
+  },
+  {
+    path: 'market-card',
+    component: MarketCardComponent
   }
 
 ];

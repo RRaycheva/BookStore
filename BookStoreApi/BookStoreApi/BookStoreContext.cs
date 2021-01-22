@@ -11,6 +11,7 @@ namespace BookStoreApi.Models
         public DbSet<BookUser> BookUsers { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<LogEntry> Logs { get; set; }
+        public DbSet<MarketCart> MarketCarts { get; set; }
 
 
         public BookStoreContext(DbContextOptions options)
