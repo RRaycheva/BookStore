@@ -1,17 +1,26 @@
-<p>about-book works!</p>
+<div id="background">
+  <div *ngIf="book">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <img src="{{book.imgPath}}"
+               class="img pl-5 pt-5 pb-5">
+        </div>
+        <div class="col-sm">
+          <div class="rounded float-left">
+            <div class="display-4 pt-5 pb-5">{{book.title}}</div>
+            <div>Описание :{{book.description}}</div>
+            <div>Издателство: {{book.publisher}}</div>
+            <div class=" pt-4">Цена: {{book.price}} Лв.</div>
+          </div>
+        </div>
+      </div>
+      <button type="button"
+              (click)="delete()"
+              class="btn btn-secondary mt-5 ml-5 mb-5">Изтрий</button>
 
-<div *ngIf="book">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        <img src="{{book.imgPath}}">
-      </div>
-      <div class="col-sm">
-        <div>{{book.title}}</div>
-        <div>{{book.description}}</div>
-        <div>{{book.publisher}}</div>
-        <div>{{book.price}}</div>
-      </div>
+      <button type="button"
+              class="btn btn-warning mt-5 ml-5 mb-5">Купи</button>
     </div>
   </div>
 </div>

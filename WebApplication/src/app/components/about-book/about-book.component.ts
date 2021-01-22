@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { BookResource } from 'src/app/services/book.service';
 import { Book } from 'src/app/shared/book';
 
@@ -14,13 +14,25 @@ export class AboutBookComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private bookResource: BookResource
+    private bookResource: BookResource,
+    public router: Router
+
   ) { }
 
   ngOnInit(): void {
     const bookId = this.route.snapshot.paramMap.get('id');
-
     this.bookResource.getBookId(bookId)
       .subscribe((data: Book) => this.book = data);
   }
+
+  delete(): void {
+    this.bookResource.deleteById(this.route.snapshot.paramMap.get('id'))
+      .subscribe(() => {
+        this.router.navigate(['/books']);
+      });
+  }
+
 }
+
+
+

@@ -25,6 +25,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutBookComponent } from './components/about-book/about-book.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,9 +40,7 @@ import { AboutBookComponent } from './components/about-book/about-book.component
     GenredetailComponent,
     AuthordetailComponent,
     AboutUsComponent,
-    AboutBookComponent
-
-
+    AboutBookComponent,
   ],
   imports: [
     BrowserModule,

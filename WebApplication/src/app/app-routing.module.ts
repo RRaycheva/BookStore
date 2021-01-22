@@ -11,6 +11,7 @@ import { BestsellerComponent } from './components/bestseller/bestseller.componen
 import { AboutBookComponent } from './components/about-book/about-book.component';
 
 
+
 const routes: Routes = [
   {
     path: '',
@@ -48,7 +49,6 @@ const routes: Routes = [
     path: 'aboutbook/:id',
     component: AboutBookComponent
   }
-
 
 ];
 

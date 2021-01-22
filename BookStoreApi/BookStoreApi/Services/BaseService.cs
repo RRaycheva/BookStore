@@ -33,7 +33,9 @@ namespace BookStoreApi.Services
         {
             var model = context.Set<T>()
                  .Single(s => s.Id == id);
+            
             context.Remove(model);
+            context.SaveChanges();
         }
 
         public T Update(T model)

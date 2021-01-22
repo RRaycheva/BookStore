@@ -30,7 +30,7 @@ export class BookResource {
     return this.http.put('api/Book/' + id, book);
   }
 
-  delete(id): Observable<any> {
+  deleteById(id): Observable<any> {
     return this.http.delete('api/Book/' + id);
   }
 
